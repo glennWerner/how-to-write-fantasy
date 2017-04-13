@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.glenn.howtowritefantasy.activities.TheMagicActivity">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/tb_menu"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tb_menu">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:paddingEnd="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+
+            <!-- World with Magic -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/header"
+                android:textStyle="bold"
+                android:text="@string/magic_world_sub"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/body_text"
+                android:text="@string/magic_world_p1"/>
+
+            <!-- Magic Rules -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/header"
+                android:textStyle="bold"
+                android:text="@string/magic_rules_sub"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/body_text"
+                android:text="@string/magic_rules_p1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/body_text"
+                android:text="@string/magic_rules_p2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/body_text"
+                android:text="@string/magic_rules_p3"/>
+
+
+            <!-- Magic History -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/header"
+                android:textStyle="bold"
+                android:text="@string/magic_history_sub"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/body_text"
+                android:text="@string/magic_history_p1"/>
+
+
+            <!-- Magic in Storyline -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/header"
+                android:textStyle="bold"
+                android:text="@string/magic_storyline_sub"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/body_text"
+                android:text="@string/magic_storyline_p1"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

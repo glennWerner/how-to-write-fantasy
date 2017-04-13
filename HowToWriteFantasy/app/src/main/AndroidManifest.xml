@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.glenn.howtowritefantasy">
+
+    <supports-screens android:smallScreens="false"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="false"
+        android:requiresSmallestWidthDp="360" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activities.CharacterDevActivity"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.TheWorldActivity"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.TheMagicActivity"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.CreaturesRacesActivity"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.StoryDevActivity"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.CharacterContentActivity"
+            android:parentActivityName=".activities.CharacterDevActivity" />
+        <activity
+            android:name=".activities.StoryContentActivity"
+            android:parentActivityName=".activities.StoryDevActivity" />
+        <activity
+            android:name=".activities.AboutActivity"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity android:name=".activities.SplashActivity" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
